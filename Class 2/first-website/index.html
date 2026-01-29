@@ -1,0 +1,88 @@
+<!doctype html> <!-- doctype declaration -->
+<html>
+    <head>
+        <title>my first website</title>
+        <!-- How to link the style sheet to the main html file -->
+        <link rel="stylesheet" href="main.css">
+        <!-- REMOVED CODE NOTES /* the p under style makes all the paragraphs <p> in the document change, any style applied here changes all styles of that element in the document... samegoes for h1.. so on */ -->
+            <!-- These styles only apply to this page and not in another links to other pages -->
+             <!-- We will make an external style sheet -->
+        <!-- style> 
+            p {
+               background-color:cyan; /* background color of all paragraphs */
+               color:azure; /* color of texts in all paragraphs */
+            }
+
+            h1{
+                font-size:60px; /* Changes font size of all h1s */
+            }
+        </style> -->
+    </head>
+    <body>
+        <h1 class="special centered-text">Yomna's Big Beautiful World</h1>
+        <h2>The Most Fabulous Place to Exist</h2>
+        <h3>Yomna</h3> <!-- Heading are the only elements that has like numerical order -->
+        <h4>Yomn</h4>
+        <h5>Yom</h5> 
+        <h6>Yo</h6>
+
+        <!-- <p style="background-color:indianred; color:aliceblue;"> Hello World!!</p> -->
+        <!-- Adding a style attribute (background-color:name;)-->
+          <!-- before the > of the first p & add a semicolon after the color name-->
+          <!-- This will give a background color for the paragraph -->
+          <!-- Hover over the color block to choose other colors on color wheel -->
+
+        <!-- Adding another style attribute (color:name;) -->
+            <!-- This changes the text color -->
+
+        <p class="special centered-text">Hello World!!!!!</p> 
+        
+
+        <!-- How to create a link -->
+        <ul>
+            <li><a href="https://handmade-web.net/spring26">About Yomna</a></li>
+            <li><a href="about.html">Everything About Yomna</a></li>
+        </ul>
+
+        <!-- the browser will ignore any extra spaces or linebreaks by default -->
+         <!-- Line br -->
+        <p>It’s important to keep all files related to a website in the same folder. Try to develop an organizational system that won’t change much and can be scaled as needed. This will help with locating files as the website grows and will prevent references to files (like webpages and images) from breaking when you re-organize things. Don't stress too much about this early on — over time you will develop a personal sense of organization.</p>
+        
+        <p>It’s important to keep all files related to a website in the same folder. Try to develop an organizational system that won’t change much and can be scaled as needed. This will help with locating files as the website grows and will prevent references to files (like webpages and images) from breaking when you re-organize things. <br> Don't stress too much about this early on — over time you will develop a personal sense of organization. <br><br><br> Don't stress Don't stress Don't stress Don't stress Don't stress Don't stress Don't stress Don't stress Don't stress</p>
+        <!-- Line breaks could be created by using two different paragraph elements or a single <br>, add multiple <br>s if more line breaks needed-->
+
+        <!-- How to create a list - next -->
+         <p>Things to do when around me: </p> <!-- This is the title for our list -->
+         <ul> <!-- This makes the list in points -->
+            <li>Be smart or have common sense</li>
+            <li>Lower your voice</li>
+            <li>Don't be rude. Ever.</li>
+         </ul>
+
+         <p>This is the same list, but arbitrarily ordered </p> 
+         <ol> <!-- This makes the list in numbers points -->
+            <li>Be smart or have common sense</li>
+            <li>Lower your voice</li>
+            <li>Don't be rude. Ever.</li>
+         </ol>
+
+         <hr> <!-- To add a long horizontal line in the page -->
+
+         <!-- How to insert images -->
+         <!-- image doe not have a closeing tag -->
+        <!--  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaAKr0xLv2vlphGUThzpt3yLMA8fztUp9DBQ&s">  -->
+
+          <img src="barbie.jpeg" alt="a fabulous barbie doll" width="200"> 
+
+          <!-- (img src=name.jpeg
+           is another way to insert an image, must be in the same folder as the index file and the name i insert must be the same -->
+
+           <!-- why do we use alt??? -->
+
+           <!-- if you put width only, it will automatically do the height, if you do both, it will shrink and stretch to it -->
+
+           <img src="barbie.jpeg" alt="a fabulous barbie doll" width="300"> 
+           <img src="barbie.jpeg" alt="a fabulous barbie doll" width="400"> 
+           <img src="barbie.jpeg" alt="a fabulous barbie doll" width="500"> 
+    </body>
+</html>

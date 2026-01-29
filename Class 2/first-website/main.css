@@ -1,0 +1,62 @@
+/* This file doesnt need the <style></style> because its only for styling so we could write the rules directly */
+/* For the style sheet to work, it must be linked on the html main file... <link rel="stylesheet" href="main.css"> */
+
+body{
+    background-color:rgb(234, 219, 90);
+    /* could use html or body to change background color of the whole webpage */
+    font-size:22px;
+    /* the default font size is 16px, when you change the font size in body or html, everything resizes accordingly */
+}
+
+p {
+    background-color:blueviolet;
+    color:beige;
+    border: dashed 20px blue;
+        /* separate the values for border with spaces */
+    text-align:right;
+    padding: 20px 60px 80px 100px;
+
+    /*PADDING 
+    if written padding: vpx vpx first value is top & bottom - second value is left & right */
+    /* if 4 values - 1 top 2 right 3 bottom 4 left it goes clockwise */
+    /* padding-top:50px;
+    padding-right:100px; */
+    /* padding: 50px; */ 
+    /* padding makes space/buffer between the text/content inside the border for all uniformaly but could be more specified using padding-right/left/top..*/
+
+    /* width:700px; */ /* no flexibility when window is resized */
+    /* padding is for internal spacing and margin is for external spacing */
+    margin: 50px;
+
+    /* margin creates space between the elements */
+    /* same value system as paddingv */
+}
+
+h1{
+    /* font-size:60px; */
+
+}
+
+/* <p id="special">Hello World!!!!!</p>  */
+/* targetting the special id on hello world */
+/* ids can only exist once in a single document */
+/* an element can only have one id */
+/* removed id from document and used class instead */
+/* #special{
+    background-color:crimson;
+    color:rgb(241, 218, 11);
+} */
+
+/* for id use #special */
+/* for class use .special */
+.special{
+    background-color:crimson;
+    color:rgb(241, 218, 11);
+    border-radius: 30px;
+    /* border radius to make our element round */
+}
+
+.centered-text{
+    text-align:center;
+    padding: 20px;
+}
