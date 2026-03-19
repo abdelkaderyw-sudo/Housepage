@@ -1,0 +1,237 @@
+*{
+    box-sizing: border-box;
+}
+
+.background1{
+    background-image:url("../images/sky1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.background2{
+    background-image:url("../images/sky2.jpg");
+/*     background-size: cover; */
+    background-position: center;
+}
+
+.background3{
+    background-image:url("../images/sky3.jpg");
+/*     background-size: cover; */
+/*     background-position: center; */
+}
+
+.background4{
+    background-image: url(../images/sky4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.background5{
+    background-image: url(../images/sky5.JPG);
+
+}
+
+.background6{
+    background-image: url(../images/sky6.jpg);
+    background-size: cover;
+/*     background-position: center;
+ */}
+
+.background7{
+    background-image: url(../images/sky7.jpg);
+    background-size: cover;
+    background-position: center;    
+}
+
+.background8{
+    background-image: url(../images/sky20.JPG);    
+    background-size: cover;
+/*     background-position: center;    */ 
+}
+
+.background9{
+    background-image: url(../images/sky8.JPG);
+    background-size: cover;
+/*     background-position: center;     */
+}
+
+.background10{
+    background-image: url(../images/sky9.jpg);
+    background-size: cover;
+    background-position: center;    
+}
+
+.background11{
+    background-image: url(../images/sky10.png);
+    background-size: cover;
+/*     background-position: center;    
+ */}
+
+.background12{
+    background-image: url(../images/sky11.png);
+    background-size: cover;
+/*     background-position: center;    
+ */}
+
+.background13{
+    background-image: url(../images/sky12.png);
+    background-size: cover;
+/*     background-position: center;     */
+}
+
+.background14{
+    background-image: url(../images/sky13.png);
+    background-size: cover;
+/*     background-position: center;     */
+}
+
+.background15{
+    background-image: url(../images/sky14.png);
+    background-size: cover;
+/*     background-position:center;    
+ */}
+
+.background16{
+    background-image: url(../images/sky15.png);
+    background-size: cover;
+/*     background-position: center;} */
+}
+
+.background17{
+    background-image: url(../images/sky16.png);
+    background-size: cover;
+/*     background-position: center;} */
+}
+
+.background18{
+    background-image: url(../images/sky17.png);
+    background-size: cover;
+/*     background-position: center;} */
+}
+
+.background19{
+    background-image: url(../images/sky18.png);
+    background-size: cover;
+/*     background-position: center;} */
+}
+
+.background20{
+    background-image: url(../images/sky19.png);
+    background-size: cover;
+/*     background-position: center;}
+ */
+}
+body{
+    background-color: rgb(177, 219, 246);
+}
+
+.paperplane{
+    position:relative;
+    overflow: hidden;
+    width:100vw;
+    height:100vh;
+/*     border-radius: 50%; */
+}
+
+.plane {
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: fly 3s linear forwards;
+    animation-iteration-count: 1;
+}
+
+@keyframes fly {
+/* enter from left */
+0%{transform: translate(-15vw,50vh) rotate(0deg);}
+    /* flying normally */
+30%{transform: translate(30vw,40vh) rotate(0deg);}
+    /* start spinning */
+100%{transform: translate(30vw,40vh) rotate(-180deg);}
+}
+
+.wingRight{
+    position: absolute;
+    height: 0;
+    width: 0;
+    border-left: 22.5px solid transparent;
+    border-right: 12.5px solid transparent;
+    border-bottom: 115px solid white;
+    transform:rotate(61deg);
+    z-index: 4;
+}
+
+.bottom{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 12.5px solid transparent;
+    border-right: 12.5px solid transparent;
+    border-bottom: 25.5px solid #676d70;
+    top:71px;
+    transform: rotate(-5deg);
+    left: -52.5px;
+    z-index: 3;
+}
+
+.top{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 30px solid #c1c7c9;
+    transform: rotate(5deg);
+    left: -60px;
+    top: 65px;
+    z-index: 1;
+}
+
+.middle{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 135px solid #c1c7c9;
+    top: -13px;
+    transform: rotate(-109deg);
+    left: -7.5px;
+    z-index:2;
+}
+
+.wingLeft{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-bottom: 135px solid white;
+    transform: rotate(78deg) skewY(-35deg);
+    left: -18.5px;
+    top: -30px;
+    z-index: 3;
+}
+
+h1{
+    font-family:monospace;
+    font-size:larger;
+}
+
+.message{
+    position:absolute;
+    left:30vw;
+    top:40vh;
+    transform:translate(-50%,-50%);
+    color:rgba(0, 0, 0, 0.852);
+    font-family:monospace;
+
+    opacity:0;
+    animation: showText 2s ease forwards;
+    animation-delay:3s;
+}
+
+@keyframes showText{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+

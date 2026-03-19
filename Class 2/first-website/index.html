@@ -2,8 +2,16 @@
 <html>
     <head>
         <title>my first website</title>
+        <!-- if you want to add a font from adobe font, go to it and find the </> symbol and create a new project and you will get a head that you add to the head of the code document and stuff -->
+
+        <!-- Below is the code for the font that was copied from google font -->
+         <!-- and we copied the "font-family" line from the CSS class code to the main.css code file in body -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
         <!-- How to link the style sheet to the main html file -->
-        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="assets/main.css">
         <!-- REMOVED CODE NOTES /* the p under style makes all the paragraphs <p> in the document change, any style applied here changes all styles of that element in the document... samegoes for h1.. so on */ -->
             <!-- These styles only apply to this page and not in another links to other pages -->
              <!-- We will make an external style sheet -->
@@ -41,7 +49,7 @@
         <!-- How to create a link -->
         <ul>
             <li><a href="https://handmade-web.net/spring26">About Yomna</a></li>
-            <li><a href="about.html">Everything About Yomna</a></li>
+            <li><a href="pages/about.html">Everything About Yomna</a></li>
         </ul>
 
         <!-- the browser will ignore any extra spaces or linebreaks by default -->
@@ -72,7 +80,7 @@
          <!-- image doe not have a closeing tag -->
         <!--  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaAKr0xLv2vlphGUThzpt3yLMA8fztUp9DBQ&s">  -->
 
-          <img src="barbie.jpeg" alt="a fabulous barbie doll" width="200"> 
+          <img src="assets/barbie.jpeg" alt="a fabulous barbie doll" width="200"> 
 
           <!-- (img src=name.jpeg
            is another way to insert an image, must be in the same folder as the index file and the name i insert must be the same -->
@@ -81,8 +89,11 @@
 
            <!-- if you put width only, it will automatically do the height, if you do both, it will shrink and stretch to it -->
 
-           <img src="barbie.jpeg" alt="a fabulous barbie doll" width="300"> 
-           <img src="barbie.jpeg" alt="a fabulous barbie doll" width="400"> 
-           <img src="barbie.jpeg" alt="a fabulous barbie doll" width="500"> 
+           <!-- file paths are relative to the file they are being written in (for images for ex.) -->
+           
+
+           <img src="assets/barbie.jpeg" alt="a fabulous barbie doll" width="300"> 
+           <img src="assets/barbie.jpeg" alt="a fabulous barbie doll" width="400"> 
+           <img src="assets/barbie.jpeg" alt="a fabulous barbie doll" width="500"> 
     </body>
 </html>

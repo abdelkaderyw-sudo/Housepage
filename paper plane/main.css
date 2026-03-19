@@ -1,0 +1,83 @@
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.paperplane{
+    position: relative;
+    overflow: hidden;
+    width:400px;
+    height:400px;
+    background-color:#50befa;
+    border-radius: 50%;
+}
+
+.plane {
+    position: absolute;
+    left: 200px;
+    top: 150px;
+}
+
+.wingRight{
+    position: absolute;
+    height: 0;
+    width: 0;
+    border-left: 22.5px solid transparent;
+    border-right: 12.5px solid transparent;
+    border-bottom: 115px solid white;
+    transform:rotate(61deg);
+    z-index: 4;
+}
+
+.bottom{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 12.5px solid transparent;
+    border-right: 12.5px solid transparent;
+    border-bottom: 25.5px solid #676d70;
+    top:71px;
+    transform: rotate(-5deg);
+    left: -52.5px;
+    z-index: 3;
+}
+
+.top{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 30px solid #c1c7c9;
+    transform: rotate(5deg);
+    left: -60px;
+    top: 65px;
+    z-index: 1;
+}
+
+.middle{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 135px solid #c1c7c9;
+    top: -13px;
+    transform: rotate(-109deg);
+    left: -7.5px;
+    z-index:2;
+}
+
+.wingLeft{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-bottom: 135px solid white;
+    transform: rotate(78deg) skewY(-35deg);
+    left: -18.5px;
+    top: -30px;
+    z-index: 3;
+}
