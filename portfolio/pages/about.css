@@ -1,0 +1,56 @@
+* Basic reset to remove default margins */
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+.navbar {
+    background-color: black; 
+    color: white;
+    padding: 1rem 2rem;
+    position: right; 
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+/* The wrapper inside the bar */
+.nav-container {
+    display: flex;
+    justify-content: space-between; /* This pushes email left, links right */
+    align-items: center;
+    width: 100%;
+    margin: 0 auto; /* Centers the container content */
+}
+
+/* Style for the email */
+.nav-email a {
+    color: white;
+    text-decoration: none;
+    font-family: monospace;
+    font-size: large;
+    text-align: right;
+}
+
+/* Style for the list of links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Space between links */
+    text-align: right;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-family: monospace;
+    font-size: large;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for a little "pop" */
+.nav-links a:hover {
+    color: black; 
+}

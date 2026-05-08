@@ -1,0 +1,281 @@
+*{
+    box-sizing: border-box;
+}
+
+/* .background1{
+    background-image:url("../images/sky1.jpg");
+    background-size: cover;
+    background-position: center;
+} */
+.background1{
+    background-color: #000000;
+    background-size: cover;
+    background-position: center;
+}
+
+.background2{
+    background-image:url("../images/sky2.jpg");
+/*     background-size: cover; */
+    background-position: center;
+}
+
+.background3{
+    background-image:url("../images/sky3.jpg");
+/*     background-size: cover; */
+/*     background-position: center; */
+}
+
+.background4{
+    background-image: url(../images/sky4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.background5{
+    background-image: url(../images/sky5.JPG);
+
+}
+
+.background6{
+    background-image: url(../images/sky6.jpg);
+    background-size: cover;
+/*     background-position: center;
+ */}
+
+.background7{
+    background-image: url(../images/sky7.jpg);
+    background-size: cover;
+    background-position: center;    
+}
+
+.background8{
+    background-image: url(../images/sky20.JPG);    
+    background-size: cover;
+/*     background-position: center;    */ 
+}
+
+.background9{
+    background-image: url(../images/sky8.JPG);
+    background-size: cover;
+/*     background-position: center;     */
+}
+
+.background10{
+    background-image: url(../images/sky9.jpg);
+    background-size: cover;
+    background-position: center;    
+}
+
+.background11{
+    background-image: url(../images/sky10.png);
+    background-size: cover;
+/*     background-position: center;    
+ */}
+
+.background12{
+    background-image: url(../images/sky11.png);
+    background-size: cover;
+/*     background-position: center;    
+ */}
+
+.background13{
+    background-image: url(../images/sky12.png);
+    background-size: cover;
+/*     background-position: center;     */
+}
+
+.background14{
+    background-image: url(../images/sky13.png);
+    background-size: cover;
+/*     background-position: center;     */
+}
+
+.background15{
+    background-image: url(../images/sky14.png);
+    background-size: cover;
+/*     background-position:center;    
+ */}
+
+.background16{
+    background-image: url(../images/sky15.png);
+    background-size: cover;
+/*     background-position: center;} */
+}
+
+.background17{
+    background-image: url(../images/sky16.png);
+    background-size: cover;
+/*     background-position: center;} */
+}
+
+.background18{
+    background-image: url(../images/sky17.png);
+    background-size: cover;
+/*     background-position: center;} */
+}
+
+.background19{
+    background-image: url(../images/sky18.png);
+    background-size: cover;
+/*     background-position: center;} */
+}
+
+.background20{
+    background-image: url(../images/sky19.png);
+    background-size: cover;
+/*     background-position: center;}
+ */
+}
+body{
+    background-color: black;
+}
+
+h1{
+    font-family:monospace;
+    font-size:xx-large;
+    color: white;
+    text-align: left;
+    padding: 40px;
+}
+
+h2{
+    font-family:monospace;
+    font-size:x-large;
+    color: white;
+    text-align: center;
+    padding: 40px;
+    padding-bottom: 1px;
+    margin-bottom: 0%;
+}
+
+
+/* PAGE 1 - WHEN SHAME BECAME PRIDE PAGE */
+
+/* This container makes the video fill the remaining screen space */
+.video-wrapper-p1 {
+    width: 100%;
+    height: 100vh; 
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black; 
+}
+
+.video-wrapper-p1 video {
+    width: 90%;
+    height: 90%;
+    object-fit: cover; /* This makes the video fill the box without weird gaps */
+}
+
+.text-intro {
+    text-align: center; /* Keeps the Title in the middle */
+    padding: 20px;
+}
+
+.left-col, .right-col {
+    display: inline-block; /* This puts them side-by-side */
+    vertical-align: top;   /* Keeps them lined up at the top */
+    width: 45%;            /* Gives each one almost half the screen */
+    text-align: left;      /* Makes the text inside read left-to-right */
+    font-family: 'MyCustomFont', sans-serif;
+    color: white;
+}
+
+/* This adds a little space between the two columns */
+.left-col {
+    margin-right: 4%;
+}
+
+/* PAGE 5 ANIMATION */
+
+.video-wrapper-p1 {
+    width: 100%;
+    height: 100vh; 
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black; 
+    position: relative; /* This keeps the images stacked in the same spot */
+}
+
+.video-wrapper-p1 img {
+    position: absolute; /* This stacks them on top of each other like a deck of cards */
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    animation: alternateImages 2s infinite; /* 6 seconds total, repeat forever */
+}
+
+/* We delay the second image so it shows up later */
+.img-2 {
+    animation-delay: 3s !important; 
+}
+
+/* The instruction for the "fading" effect */
+@keyframes alternateImages {
+    0%, 100% { opacity: 1; }  /* Visible at the start and end */
+    45%, 55% { opacity: 0; }  /* Hidden in the middle */
+}
+
+
+/* top bar */
+
+* Basic reset to remove default margins */
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+/* The main bar */
+.navbar {
+    background-color: black; 
+    color: white;
+    padding: 1rem 2rem;
+    position: right; 
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+/* The wrapper inside the bar */
+.nav-container {
+    display: flex;
+    justify-content: space-between; /* This pushes email left, links right */
+    align-items: center;
+    width: 100%;
+    margin: 0 auto; /* Centers the container content */
+}
+
+/* Style for the email */
+.nav-email a {
+    color: white;
+    text-decoration: none;
+    font-family: monospace;
+    font-size: large;
+    text-align: right;
+}
+
+/* Style for the list of links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Space between links */
+    text-align: right;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-family: monospace;
+    font-size: large;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for a little "pop" */
+.nav-links a:hover {
+    color: black; 
+}
